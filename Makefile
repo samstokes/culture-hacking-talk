@@ -13,11 +13,11 @@ zip: $(ARCHIVE_NAME).zip
 dist: $(SLIDES_DIST) $(ASSETS)
 	mkdir -p dist
 	# download external references, e.g. slidy CSS and JS
-	sed -nE 's?.*\b(href|src)="(http://[^"]+)".*?\2?p' $< | xargs -Iquux sh -c 'test -f dist/`basename quux` || wget --directory-prefix dist quux'
+	sed -nE 's?.*\b(href|src)="(https\?://[^"]+)".*?\2?p' $< | xargs -Iquux sh -c 'test -f dist/`basename quux` || wget --directory-prefix dist quux'
 	ls dist/*.gz | xargs --no-run-if-empty gunzip
 	if [ -n "$(ASSETS)" ]; then cp $(ASSETS) dist; fi
 	# modify external references to point to downloaded assets
-	sed -E 's?\b(href|src)="(http://[^"]+/([^"]+))"?\1="\3"?; s?\b(href|src)="(.*)\.gz"?\1="\2"?' $< > dist/$<
+	sed -E 's?\b(href|src)="(https\?://[^"]+/([^"]+))"?\1="\3"?; s?\b(href|src)="(.*)\.gz"?\1="\2"?' $< > dist/$<
 $(ARCHIVE_NAME).zip: dist
 	cd $< && zip ../$@ *
 
