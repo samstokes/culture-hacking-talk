@@ -8,8 +8,14 @@ h2 { font-size: 120% }
 h3 { font-size: 100% }
 
 .slide > p {
-  margin-left: 2em;
+  margin-left: 4em;
   display: list-item;
+}
+
+.slide > ul li {
+  list-style-type: disc;
+  /* slidy.css defines ul { margin-left: 1.5em } */
+  margin-left: 2.5em;
 }
 
 .slide img {
