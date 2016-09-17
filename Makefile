@@ -6,7 +6,7 @@ SLIDES = $(NAME)-slides.html
 SLIDES_DIST = $(NAME)-slides-standalone.html
 SLIDES_STYLESHEET = $(wildcard slides.css)
 IMAGES = $(wildcard *.png *.jpg)
-ASSETS = $(wildcard $(IMAGES) $(SLIDES_STYLESHEET))
+ASSETS = $(wildcard $(IMAGES) $(SLIDES_STYLESHEET) book-recommendations.txt)
 
 all: $(SLIDES)
 zip: $(ARCHIVE_NAME).zip

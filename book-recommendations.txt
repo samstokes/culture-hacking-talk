@@ -1,0 +1,22 @@
+Field Guide to Understanding Human Error - Sidney Dekker
+  - https://smile.amazon.com/dp/1472439058
+  - Nobody comes to work to do a bad job
+  - "Cause and effect" can be misleading in complex systems
+
+Thinking in Systems: A Primer - Donella Meadows
+  - https://smile.amazon.com/dp/B005VSRFEA
+  - Feedback loops
+  - Unintended consequences of incentives
+  - Bounded rationality
+
+Becoming a Technical Leader - Gerald Weinberg
+  - https://smile.amazon.com/dp/B004J4VV3I
+  - Leadership as something you do, not a title you are given
+
+Driving Technical Change - Terrence Ryan
+  - https://pragprog.com/book/trevan/driving-technical-change
+  - Recommended by John Tuley
+
+The Phoenix Project - Gene Kim, Kevin Behr, George Spafford
+  - https://smile.amazon.com/dp/0988262592
+  - "Business novel" (basically an extended worked example) - fictionalised account of a dysfunctional company, and how the main character learns to fix things
