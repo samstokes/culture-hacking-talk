@@ -1,0 +1,32 @@
+Culture Hacking from the Inside Out - Orphan Slides
+What do I mean by culture hacking?
+	>MARKDOWN
+	>## In a culture that doesn't share your values...
+	>1. You can change your organisation
+	>      * i.e. modify the culture
+	>2. Or you can change your organisation
+	>      * i.e. quit
+	Culture hacking
+		Identify points of leverage
+		Direct your effort there
+	Third option...
+		Learn from the culture
+Leverage point: missing feedback loop
+	Company policy required code review
+		Enforced at commit time
+	... but team didn't practice code review
+		Saw it as roadblock to shipping
+		Worked around enforcement with one-word reviews
+	My experience: code review is an essential feedback loop
+		Not just catching bugs
+		Talk about expectations
+		Share knowledge
+Restoring the missing feedback loop
+	Figure out why team didn't do code review
+		Called a team meeting
+		Brainstorm format - I didn't talk much!
+	Couldn't see the value
+		No experience with good reviews
+	Frustration around delay
+		Different expectations about response time
+	Just asking about it started conversations
