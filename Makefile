@@ -18,6 +18,7 @@ dist: $(SLIDES_DIST) $(ASSETS)
 	if [ -n "$(ASSETS)" ]; then cp $(ASSETS) dist; fi
 	# modify external references to point to downloaded assets
 	sed -E 's?\b(href|src)="(https\?://[^"]+/([^"]+))"?\1="\3"?; s?\b(href|src)="(.*)\.gz"?\1="\2"?' $< > dist/$<
+	mv dist/$(SLIDES_DIST) dist/index.html
 $(ARCHIVE_NAME).zip: dist
 	cd $< && zip ../$@ *
 
